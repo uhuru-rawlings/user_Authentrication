@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}
+   <title>{{  title }}</title>
+{% endblock %}
+
+{% block body %}
+  <div class="contents">
+      <div class="headings">
+        <h3>Login</h3>
+        <p>Welcome back please login to continue</p>
+      </div>
+      <div class="forms">
+          <form action="" method="post">
+              <input type="text" name="usernames" autocomplete="off" id="usernames" placeholder="Enter username">
+              <input type="password" name="passwords" autocomplete="off" id="passwords" placeholder="Enter password">
+              <div class="link">
+                <a href="/signup">Dont have account?</a>
+              </div>
+              <br>
+              <input type="submit" value="Sign-In" name="signin">
+          </form>
+      </div>
+  </div>
+{% endblock %}
